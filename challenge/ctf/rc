@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# So we don't break scp
+exec 1>&2
+
+echo ".--------------------------S h e l l m a t e s   I n f o s e c   W e e k--------------------------."
+echo "| Challenge: TicTocTou                                                                            |"
+echo "| Difficulty: Medium                                                                              |"
+echo "| Category: Pwn                                                                                   |"
+echo "| Description:                                                                                    |"
+echo "|              Have you ever played the game named TicTocTou? Yeah, me too, I used to play it a   |"
+echo "|                lot during boring classes in primary school, because, you know, playing games    |"
+echo "|                          changes your time's perception and the class ends faster!              |"
+echo "|                                                                                                 |"
+echo "| Author's note:                                                                                  |"
+echo "|                Your goal is to privesc to ctf-cracked in order to execute the flag binary and   |"
+echo "|                   read the flag. Run 'tictoctou' and start pwning, source code is available     |"
+echo "|                                   for this challenge, let's do it whitebox!                     |"
+echo "|                       PS: ctf-cracked often logs in to the system, maybe this well help.        |"
+echo "|                                                gl & hf. - hfz                                   |"
+echo "'-------------------------------------------------------------------------------------------------'"
+echo
+echo "- Each player should use a unique temporary folder under /tmp in order to avoid spoilers."
+echo "- Your folder: $(mktemp -d), use that directory to build your exploit scripts if you wish to."
